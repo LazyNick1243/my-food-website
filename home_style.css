@@ -1,0 +1,251 @@
+.nav-menu-3 {
+    display: none; 
+    flex-direction: column; 
+}
+
+.menu-button {
+    cursor: pointer; 
+}
+
+@media (min-width: 768px) {
+    .nav-menu-3 {
+        display: flex; 
+        flex-direction: row; 
+    }
+}
+
+    .blog33_item:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .nav-link-2:hover {
+        color: #ff6347; 
+        transition: color 0.3s ease;
+    }
+	.blog33_item {
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    position: relative;
+    overflow: hidden; 
+	
+  }
+
+  .blog33_item:hover {
+    transform: rotate(2deg) scale(1.05);
+    box-shadow: 0 8px 20px rgba(247, 231, 231, 0.966);
+    background-color: rgba(16, 12, 12, 0.888); 
+  }
+
+  .blog33_item-link {
+    text-decoration: none;
+    color: inherit; 
+    position: relative;
+    z-index: 1; 
+  }
+
+  .blog33_image {
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+
+  .blog33_item:hover .blog33_image {
+    transform: scale(1.1); 
+  }
+  .w-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.w-button:hover {
+    transform: scale(1.1); /* Phóng to nút */
+    background-color: #2ecc71; /* Đổi màu nền */
+}
+.nav-link-2::after {
+    content: ''; /* Tạo dòng gạch chân */
+    position: absolute;
+    bottom: 70px; /* Khoảng cách so với chữ */
+    left: 0px; /* Căn từ đầu liên kết */
+    width: 0; /* Bắt đầu từ chiều rộng 0 */
+    height: 2px; /* Độ dày của gạch chân */
+    background-color: white; /* Màu của gạch chân */
+    transition: width 0.3s ease; /* Hiệu ứng mượt */
+}
+.nav-link-2:hover::after {
+    width: 70%; /* Độ dài bằng nội dung */
+}
+
+.nav-link-2:hover {
+    color: #f39c12;
+}
+
+.button-2:hover {
+        box-shadow: 0 0 20px rgba(255, 99, 71, 0.8);
+        transition: box-shadow 0.4s ease;
+}
+
+    /* Parallax effect for background video sections */
+.background-video {
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    /* Staggered animations for list items */
+.blog33_item {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+.blog33_item[data-aos="fade-up"] {
+        opacity: 1;
+        transform: translateY(0);
+    }
+.blog33_item:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+.nav-link-2:hover {
+        color: #ff6347; 
+        transition: color 0.3s ease;
+    }
+.blog33_item {
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    position: relative;
+    overflow: hidden; 
+	
+  }
+
+.blog33_item:hover {
+    transform: rotate(2deg) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.1); 
+  }
+
+.blog33_item-link {
+    text-decoration: none;
+    color: inherit; 
+    position: relative;
+    z-index: 1; 
+  }
+
+.blog33_image {
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+
+.blog33_item:hover .blog33_image {
+    transform: scale(1.1);
+  }
+
+.logo-2 {
+    position: relative; /* Để ánh sáng định vị đúng */
+    display: inline-block;
+}
+
+.logo-2 strong {
+    font-size: 24px; /* Kích thước chữ */
+    color: white;
+    position: relative;
+    z-index: 1;
+    overflow: hidden; /* Ẩn phần dư thừa của ánh sáng */
+}
+
+.logo-2::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -90%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    transform: translateY(-50%);
+    z-index: 0;
+    transition: left 0.5s ease;
+}
+
+.logo-2:hover::before {
+    left: 5%; /* Ánh sáng lướt qua */
+}
+
+
+.logo-2 strong {
+    font-size: 24px; /* Kích thước chữ */
+    color: white; /* Màu chữ ban đầu */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo-2:hover strong {
+    transform: scale(1.1); /* Phóng to nhẹ */
+    color: #f1c40f; /* Đổi màu chữ */
+}
+.nav-link-2 {
+    position: relative; /* Đảm bảo dòng gạch chân nằm đúng vị trí */
+    display: inline-block; /* Giới hạn chiều rộng theo nội dung */
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Hiệu ứng đổi màu */
+    margin-left: 30px;
+}
+
+
+.footer1_link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.footer1_link:hover {
+    color: #f39c12; /* Thay đổi màu khi hover */
+}
+
+.footer1_link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #f39c12;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.footer1_link:hover::after {
+    width: 100%;
+    left: 0;
+}
+.footer1_logo-link strong {
+    background: linear-gradient(90deg, #fad0c4, #ffd1ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* Define standard property for compatibility */
+    transition: all 0.3s ease;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.footer1_logo-link:hover strong {
+    text-shadow: 0px 6px 15px rgba(255, 255, 255, 0.5);
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+}
+
+.footer1_social-link {
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer1_social-link:hover {
+    transform: scale(1.1); /* Phóng to nhẹ */
+    color: #f39c12; /* Thay đổi màu */
+}
+
+.footer1_social-link .icon-embed-xsmall svg {
+    transition: fill 0.3s ease;
+}
+
+.footer1_social-link:hover .icon-embed-xsmall svg {
+    fill: #f39c12; /* Đổi màu biểu tượng */
+}
+

@@ -1,0 +1,265 @@
+ 
+.form_input.w-input {
+     color: #ffffff;  
+           border: 1px solid #ffffff;
+   }
+     .form_input.w-input::placeholder {
+     color: #ffffff; 
+     opacity: 1; 
+   }
+
+.blog33_item-link:hover h3 {
+   color: #ff7f50;
+   transition: color 0.3s;
+}
+
+img {
+   border-radius: 20px; 
+}
+.blog33_item {
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog33_item:hover {
+   transform: translateY(-10px) scale(1.05); /* Nâng lên và phóng to nhẹ */
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ */
+}
+.button-2 {
+   background: linear-gradient(45deg, #fedfb1, #ee3965);
+   background-size: 200% 200%;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease, color 0.3s ease, opacity 0.6s, transform 0.2s, background 0.3s ease;
+}
+.button-2:hover {
+   transform: translateY(-5px) scale(1.02);
+   background: linear-gradient(45deg, #cb9ef6, #08d1ba);
+   border-color: #2ecc71;
+   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+   background-position: right center;
+}
+.blog33_image-wrapper {
+   perspective: 1000px;
+}
+
+.blog33_image {
+   transform: rotateY(0deg) rotateX(0deg);
+   transition: transform 0.3s ease;
+}
+
+.blog33_image-wrapper:hover .blog33_image {
+   transform: rotateY(0deg) rotateX(5deg);
+}
+.button-2 {
+   position: relative;
+   overflow: hidden;
+   background-color: #3498db;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.button-2::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 0;
+   height: 0;
+   background: rgba(255, 255, 255, 0.5);
+   border-radius: 50%;
+   transform: translate(-50%, -50%);
+   transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease;
+   opacity: 0;
+}
+
+.button-2:active::after {
+   width: 200px;
+   height: 200px;
+   opacity: 1;
+   transition: 0s;
+}
+
+/*-----------------header----------*/
+
+.logo {
+   position: relative; /* Để ánh sáng định vị đúng */
+   display: inline-block;
+}
+
+.logo strong {
+   font-size: 24px; /* Kích thước chữ */
+   color: white;
+   position: relative;
+   z-index: 1;
+   overflow: hidden; /* Ẩn phần dư thừa của ánh sáng */
+}
+
+.logo::before {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: -90%;
+   width: 200%;
+   height: 100%;
+   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+   transform: translateY(-50%);
+   z-index: 0;
+   transition: left 0.5s ease;
+}
+
+.logo:hover::before {
+   left: 5%; /* Ánh sáng lướt qua */
+}
+
+
+.logo strong {
+   font-size: 24px; /* Kích thước chữ */
+   color: white; /* Màu chữ ban đầu */
+   transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo:hover strong {
+   transform: scale(1.1); /* Phóng to nhẹ */
+   color: #f1c40f; /* Đổi màu chữ */
+}
+
+
+.nav-link {
+   position: relative; /* Đảm bảo dòng gạch chân nằm đúng vị trí */
+   display: inline-block; /* Giới hạn chiều rộng theo nội dung */
+   color: white;
+   text-decoration: none;
+   transition: color 0.3s ease; /* Hiệu ứng đổi màu */
+   margin-left: 30px;
+}
+
+.nav-link::after {
+   content: ''; /* Tạo dòng gạch chân */
+   position: absolute;
+   bottom: 70px; /* Khoảng cách so với chữ */
+   left: 0px; /* Căn từ đầu liên kết */
+   width: 0; /* Bắt đầu từ chiều rộng 0 */
+   height: 2px; /* Độ dày của gạch chân */
+   background-color: white; /* Màu của gạch chân */
+   transition: width 0.3s ease; /* Hiệu ứng mượt */
+}
+
+.nav-link:hover::after {
+   width: 70%; /* Độ dài bằng nội dung */
+}
+
+.nav-link:hover {
+   color: #f39c12;
+}
+
+.search-input {
+   transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.search-input:focus {
+   background-color: #f9f9f9; /* Màu nền khi focus */
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bóng đổ */
+}
+.search-input::placeholder {
+   color: #ccc;
+   transition: opacity 0.3s ease;
+}
+
+.search-input:focus::placeholder {
+   opacity: 0; /* Ẩn placeholder khi focus */
+}
+.w-button {
+   background-color: #3498db;
+   color: white;
+   border: none;
+   padding: 8px 15px;
+   border-radius: 5px;
+   transition: transform 0.3s ease, background-color 0.3s ease;
+   cursor: pointer;
+}
+
+.w-button:hover {
+   transform: scale(1.1); /* Phóng to nút */
+   background-color: #2ecc71; /* Đổi màu nền */
+}
+
+
+.footer1_link {
+   color: white;
+   text-decoration: none;
+   position: relative;
+   transition: color 0.3s ease;
+}
+
+.footer1_link:hover {
+   color: #f39c12; /* Thay đổi màu khi hover */
+}
+
+.footer1_link::after {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   width: 0;
+   height: 2px;
+   background: #f39c12;
+   transition: width 0.3s ease, left 0.3s ease;
+}
+
+.footer1_link:hover::after {
+   width: 100%;
+   left: 0;
+}
+.footer1_logo-link strong {
+   background: linear-gradient(90deg, #fad0c4, #ffd1ff);
+   -webkit-background-clip: text;
+   background-clip: text; /* Define standard property for compatibility */
+   -webkit-text-fill-color: transparent;
+   transition: all 0.3s ease;
+   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.footer1_logo-link:hover strong {
+   text-shadow: 0px 6px 15px rgba(255, 255, 255, 0.5);
+   transform: scale(1.1); /* Phóng to nhẹ khi hover */
+}
+
+.footer1_social-link {
+   position: relative;
+   transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer1_social-link:hover {
+   transform: scale(1.1); /* Phóng to nhẹ */
+   color: #f39c12; /* Thay đổi màu */
+}
+
+.footer1_social-link .icon-embed-xsmall svg {
+   transition: fill 0.3s ease;
+}
+
+.footer1_social-link:hover .icon-embed-xsmall svg {
+   fill: #f39c12; /* Đổi màu biểu tượng */
+}
+
+
+.heading-style-h2 {
+   text-align: center !important;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+ }
+
+.centered-heading-block h1,
+.centered-heading-block p {
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

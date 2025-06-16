@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - TASTY</title>
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .login-container {
+      width: 350px;
+      background: rgba(255, 255, 255, 0.9); /* slightly transparent background */
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      border-radius: 12px;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(45deg, #ee3965, #fb8a2a);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background: linear-gradient(45deg, #2cd62f, #25c5b8);
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: #ccc;
+      margin: 5px;
+    }
+
+    .register-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-btn:hover {
+      background-color: #333;
+    }
+
+    .forgot-password {
+      margin-top: 12px;
+      font-size: 14px;
+    }
+
+    .forgot-password a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .forgot-password a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <input type="text" class="input-field" placeholder="Account, email or phone number" />
+    <input type="password" class="input-field" placeholder="Password" />
+    <button class="login-btn" onclick="window.location.href='index.html'">Login</button>
+
+    <div class="divider">or</div>
+
+    <button class="register-btn" onclick="window.location.href='signup.html'">Create new account</button>
+
+    <div class="forgot-password">
+      <a href="#">Forget password?</a>
+    </div>
+  </div>
+
+</body>
+</html>
